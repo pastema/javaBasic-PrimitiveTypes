@@ -30,8 +30,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final short maximumSymbol = 0;
-        final short minimumSymbol = 0;
+        final short maximumSymbol = Short.MAX_VALUE;
+        final short minimumSymbol = Short.MIN_VALUE;
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -45,8 +45,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final long maximumSymbol = 0;
-        final long minimumSymbol = 0;
+        final long maximumSymbol = Long.MAX_VALUE;
+        final long minimumSymbol = Long.MIN_VALUE;
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -60,8 +60,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final byte maximumSymbol = 0;
-        final byte minimumSymbol = 0;
+        final byte maximumSymbol = Byte.MAX_VALUE;
+        final byte minimumSymbol = Byte.MIN_VALUE;
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -75,7 +75,9 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = 0;
+
+        final int expectedResult = Integer.MAX_VALUE + Integer.MAX_VALUE;
+
         // --end-->
 
         assertEquals(expectedResult, theNumberWillOverflow);
@@ -130,6 +132,7 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
+
         final short expected = 0;
         // --end-->
 
