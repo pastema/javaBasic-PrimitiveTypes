@@ -75,9 +75,9 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-
-        final int expectedResult = Integer.MAX_VALUE + Integer.MAX_VALUE;
-
+        int overflowresult = Integer.MAX_VALUE;
+        ++overflowresult;
+        final int expectedResult = overflowresult;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillOverflow);
@@ -90,7 +90,9 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = 0;
+        int underflowresult = Integer.MIN_VALUE;
+        --underflowresult;
+        final int expectedResult = underflowresult;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillUnderflow);
@@ -117,8 +119,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = Double.POSITIVE_INFINITY;
-        final double expectedResult2 = Double.POSITIVE_INFINITY;
+        final double expectedResult1 = Double.MIN_VALUE;
+        final double expectedResult2 = Double.MAX_VALUE;
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);
@@ -132,8 +134,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-
-        final short expected = 0;
+        short smallerInteger2 = (short)integer;
+        final short expected = smallerInteger2;
         // --end-->
 
         assertEquals(expected, smallerInteger);
@@ -147,8 +149,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 0;
-        final int expectedResult = 0;
+        final int expectedCurrentInteger = result;
+        final int expectedResult = --integer;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -163,8 +165,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 0;
-        final int expectedResult = 0;
+        final int expectedCurrentInteger = --integer;
+        final int expectedResult = result;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -175,6 +177,7 @@ class IntegerTypeTest {
     private int add(int left, int right) {
         // TODO: Please find the method that adding two numbers with overflow checking.
         // The method should throw ArithmeticException if overflow or underflow happens.
-        throw new NotImplementedException();
+
+            throw new NotImplementedException();
     }
 }

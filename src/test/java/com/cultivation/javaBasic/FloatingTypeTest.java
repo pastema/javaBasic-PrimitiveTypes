@@ -15,7 +15,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = (int)floatingPointNumber;
         // --end-->
 
         assertEquals(expected, integer);
@@ -41,7 +41,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = (int)floatingPointNumber;
         // --end-->
 
         assertEquals(expected, integer);
@@ -54,7 +54,7 @@ class FloatingTypeTest {
 
         // TODO: Please call some method to round the floating point number.
         // <!--start
-        final long rounded = Long.MAX_VALUE;
+        final long rounded = Math.round(floatingPointNumber);
         // --end-->
 
         assertEquals(3L, rounded);
