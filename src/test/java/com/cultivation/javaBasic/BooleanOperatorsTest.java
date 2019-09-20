@@ -45,7 +45,7 @@ class BooleanOperatorsTest {
         // <--start
         final int expected = 305920;
         // --end-->
-
+        System.out.println(value & mask);
         assertEquals(expected, value & mask);
     }
 
