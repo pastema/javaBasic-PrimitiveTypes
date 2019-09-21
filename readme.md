@@ -16,9 +16,13 @@ Each repository contains a gradle java project with a number of unit tests. The 
 The 4 questions are:
 
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+	- to know what are the the behaviors and ways to use Boolean, Character, Floating, and Integer Types.
 1. Why the test failed at first?
+	- because I have analyzed the project incorrectly.
 1. Why you corrected the test that way?
+	- because I had a hard time understanding the required changes and thought of that this might be the correct answer.
 1. Do you have further questions on this knowledge point?
+	- are there more ways to handle this types of variables?
 
 ## Example
 
